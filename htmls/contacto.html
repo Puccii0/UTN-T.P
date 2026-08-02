@@ -1,11 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="/UTN-T.P/css/contacto.css">
+    <link rel="stylesheet" href="/UTN-T.P/css/general.css" >
 </head>
+
 <body>
+    <section class="contacto">
     
+    <h1>Contactanos!</h1>
+    <h3>Tenes un mensaje para nosotros o queres conocer mas sobre nuestro productos?</h3>
+    <form action="/UTN-T.P/php/guardar_contacto.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        
+        <label for="asunto">Asunto:</label>
+        <input type="text" id="asunto" name="asunto" required>
+
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+    </section>
+
 </body>
 </html>

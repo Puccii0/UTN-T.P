@@ -1,45 +1,105 @@
 :root{
-    --color-primary: #A8B39C;      /* Verde */
-    --color-secondary: #EBC8C8;    /* Rosa  */
-    --color-background: #F7F3EE;   /* Crema */
-    --color-background2: #EFE6D8;  /* Beige */
-    --color-text: #4B443F;         /* Marrón oscuro */
+    --color-primary: #9EAD8D;      /* Verde */
+    --color-secondary: #E6C8C8;    /* Rosa  */
+    --color-background: #F8F4EE;   /* Crema */
+    --color-background2: #E8DCC8;  /* Beige */
+    --color-text: #433932;         /* Marrón oscuro */
 }
 
-
+body {
+   background-color: var(--color-background2);
+}
 .hero {
-    display: flex;
     justify-content: flex-start;
+    min-height: 100vh;
     background-color: var(--color-background);
+    padding: 25px;
+    border-radius: 8%;
+   
+
 }
 
+.texto-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 35px;
+    background-color: var(--color-background);
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+/* TITULOS DEL HERO */
 .hero h1 {
-    background-color: aqua;
+    text-align: center;
+    font-size: 5rem;
+    border-bottom: 5px solid var(--color-primary);
+    
 
 }
+.hero h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: var(--color-text);
+}
+
+/* BOTON DEL HERO */
+
+.boton-hero {
+    /*
+    display: inline-block;
+    margin-top: 20px;
+    background-color: var(--color-primary);
+    color:wheat;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    color: var(--color-text);
+    transition: background-color 0.9s ease;
+    */
+    align-self: center;
+    margin-top: 20px;
+    background-color: var(--color-primary);
+    padding: 15px 35px;
+    color: var(--color-text);
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: background-color 0.9s ease, color 0.9s ease;
+}
+.boton-hero:hover {
+    background-color: var(--color-secondary);
+    transform: translateY(-3px);
+    box-shadow: #9EAD8D 0px 10px 20px rgba(0, 0, 0, 0.2);
+    color: var(--color-text);
+}
+
 
 .hero p {
-    display: flex;
-    justify-content: flex-start;
-    padding: 30px;
+    background-color: var(--color-background);
+    font-size: 3rem;
+    padding: 20px;
     font-size: 1.5rem;
-   
-   flex-direction: column;
-   color: var(--color-text)
 }
 
 .hero-image {
-    height: 1px;
+   width: 50%;
+   border-radius: 20px;
+   object-fit: cover;
+    box-shadow:0px 10px 25px rgba(0,0,0,.08);
      
 }
-
-
-.hero a {
+.hero-content {
     display: flex;
-    align-items: end;
+    justify-content: flex;
+    align-items: center;
+    margin-top: 50px;
+    gap: 60px;
 }
-body{
-    
-    background-color: var(--color-background); 
-}
+
 

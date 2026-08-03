@@ -1,17 +1,27 @@
 .contacto {
+    padding: 50px 80px;
     display: flex;
     flex-direction: column;
-    max-width: 700px;
+    max-width: 1200px;
     margin: 0 auto;
     background-color: var(--color-background);
-    padding: 25px;
     border-radius: 8%;
     border: 5px solid var(--color-primary);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    
     
 }
 
+.contenedor-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 40px;
+
+}
+
 form {
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -23,6 +33,14 @@ form {
 
 }
 
+.info-contacto {
+    width: 40%;
+    padding: 30px;
+    background-color: var(--color-background2);
+    border-radius: 20px;
+    border: 4px solid var(--color-secondary);
+}
+
 input {
     width: 100%;
     padding: 10px;
@@ -30,6 +48,13 @@ input {
     border-radius: 5px;
     border: 4px solid #ccc;
     box-sizing: border-box;
+}
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    border: 4px solid #ccc;
 }
 
 label {
@@ -44,10 +69,13 @@ label {
     gap: 0.2rem;
 }
 
-button:hover{
-
-    background:#879673;
-
+.botonform button {
+    padding:12px 30px;
+    background:var(--color-primary);
+    color:white;
+    border:none;
+    border-radius:25px;
+    cursor:pointer;
 }
 
 .botonform {
@@ -78,11 +106,3 @@ textarea {
     box-sizing: border-box;
 }
 
-.info-contacto {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    font-size: 1.5rem;
-    font-weight: 500;
-    font-family: 'Playfair Display', serif;
-}

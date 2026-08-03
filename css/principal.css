@@ -2,19 +2,17 @@
     --color-primary: #9EAD8D;      /* Verde */
     --color-secondary: #E6C8C8;    /* Rosa  */
     --color-background: #F8F4EE;   /* Crema */
-    --color-background2: #E8DCC8;  /* Beige */
+    --color-background2: #f3d9ac;  /* Beige */
     --color-text: #433932;         /* Marrón oscuro */
 }
 
-body {
-   background-color: var(--color-background2);
-}
+
 .hero {
     justify-content: flex-start;
     min-height: 100vh;
-    background-color: var(--color-background);
+    background-color: var(--color-background2);
     padding: 25px;
-    border-radius: 8%;
+    
    
 
 }
@@ -34,7 +32,6 @@ body {
 .hero h1 {
     text-align: center;
     font-size: 5rem;
-    border-bottom: 5px solid var(--color-primary);
     
 
 }
@@ -44,11 +41,26 @@ body {
     font-weight: 400;
     margin-bottom: 20px;
     color: var(--color-text);
+    border-radius: 30px;
+    background-color: var(--color-background);
+    
 }
 
 /* BOTON DEL HERO */
 
 .boton-hero {
+    /*
+    display: inline-block;
+    margin-top: 20px;
+    background-color: var(--color-primary);
+    color:wheat;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    color: var(--color-text);
+    transition: background-color 0.9s ease;
+    */
     align-self: center;
     margin-top: 20px;
     background-color: var(--color-primary);

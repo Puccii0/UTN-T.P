@@ -1,1 +1,163 @@
-!
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.carta-jabon {
+    width: 350px;
+    border:2px solid var(--color-primary);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    padding-bottom:20px;
+}
+
+.boton-stock{
+
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background-color: var(--color-primary);
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+
+    transition: .3s;
+}
+
+
+
+.precio{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--color-primary);
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+
+/* Efecto para la carta en especifico de hello kitty*/
+
+
+
+.hellokittyjabon{
+    position: relative;
+    overflow: hidden;
+}
+
+.Kittyespia{
+
+    position:absolute;
+
+    width:90px;
+
+    left:20px;
+
+    top:-100px;
+
+    transition:.45s ease;
+
+    z-index:100;
+}
+
+.kittymsj {
+
+    position:absolute;
+
+    top:20px;
+
+    left:110px;
+
+    background:white;
+
+    padding:8px 14px;
+
+    border-radius:20px;
+
+    font-size:1rem;
+
+    opacity:0;
+
+    transition:.3s;
+
+    z-index:100;
+}
+
+.hellokittyjabon:hover .Kittyespia{
+
+    top:-10px;
+
+    animation:saludar .8s ease;
+
+}
+
+.hellokittyjabon:hover .kittymsj{
+
+    opacity:1;
+
+}
+
+@keyframes saludar{
+
+    0%{
+        transform:rotate(0deg);
+    }
+
+    25%{
+        transform:rotate(-10deg);
+    }
+
+    50%{
+        transform:rotate(10deg);
+    }
+
+    75%{
+        transform:rotate(-6deg);
+    }
+
+    100%{
+        transform:rotate(0deg);
+    }
+
+}
+
+.hello-card:hover .hello-peek{
+
+    top:-10px;
+
+    animation:saludar .8s ease;
+
+}
+
+.carta-jabon h3, 
+.carta-jabon p{
+    text-align: center;
+    margin: 10px 10px;
+    font-size: 1.5em;
+}
+
+.carta-jabon h3 {
+    font-size: 1.8em;
+}
+.carta-jabon:hover {
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,.18);
+}
+
+.imagen-jabon {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    background-color: var(--color-background);
+}

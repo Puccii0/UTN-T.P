@@ -4,34 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de contacto</title>
-    <link rel="stylesheet" href="/UTN-T.P/css/contacto.css">
-    <link rel="stylesheet" href="/UTN-T.P/css/general.css" >
+     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <section class="contacto">
-    
-    <h1>Contactanos!</h1>
-    <h3>Tenes un mensaje para nosotros o queres conocer mas sobre nuestro productos?</h3>
-    <form action="/UTN-T.P/php/guardar_contacto.php" method="POST">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required><br><br>
+
+<header>
         
+        <nav class="navbar">
+             <a href="/assets/hand-soap.png" class="logo">
+                <img src="/assets/hand-soap.png" alt="Logo-caricias">
+                </a>
+                <h1> Caricias para tu piel </h1>
+            <ul class="nav-links">
+
+                <li> <a href="/htmls/index.html">Inicio</a> </li>
+                <li> <a href="/htmls/productos.html">Nuestros Jabones </a></li>
+                <li> <a href="/htmls/contacto.html"> Contacto </a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+
+<main>
+
+<section class="contacto">
+    
+    <h1 class="form-titulo"> Contactanos! </h1>
+    <h3>Tenes un mensaje para nosotros o queres conocer mas sobre nuestro productos?</h3>
+    <form action="#" method="POST" id="form-contacto">
+
+        <div class="campform">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required><br><br>
+        </div>
+
+        <div class="campform">
         <label for="asunto">Asunto:</label>
-        <input type="text" id="asunto" name="asunto" required>
-
+        <input type="text" id="asunto" name="asunto" placeholder="Ingresa el asunto" required>
+        </div>
         <br><br>
-
+        <div class="campform">
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
+        <input type="email" id="email" name="email" placeholder="Ingresa tu email" required><br><br>
+        </div>
 
+
+        <div class="campform">
         <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" required></textarea><br><br>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" required></textarea><br><br>
+        </div>
 
+        <div class="botonform">
         <input type="submit" value="Enviar">
+        </div>
+
+        <div class="info-contacto">
+            <p><i class="fa-solid fa-phone"></i> Teléfono: 123-456-7890</p>
+            <p><i class="fa-solid fa-envelope"></i> Email: info@cariciasparatupiel.com</p>
+            <p><i class="fa-solid fa-map-marker-alt"></i> Dirección: Av. Siempreviva 742, Springfield</p>
+            <p><i class="fa-solid fa-clock"></i> Horario: Lunes a Viernes, 9:00 AM - 6:00 PM</p>
+        </div>
 
     </form>
     </section>
+
+
+
+</main>
+
+    
+  <footer >
+        <ul class="footer-nav">
+                <li> <a href="/htmls/index.html">Inicio</a> </li>
+                <li> <a href="/htmls/productos.html">Nuestros Jabones </a></li>
+                <li> <a href="/htmls/contacto.html"> Contacto </a></li>
+        </ul>
+
+        <div class="footer-redes">
+            <a href="#"> Instagram  <i class="fa-brands fa-instagram"></i> </a>
+            <a href="#"> Facebook  <i class="fa-brands fa-facebook"></i> </a>
+        </div>
+    </footer>
 
 </body>
 </html>

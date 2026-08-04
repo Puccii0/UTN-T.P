@@ -7,17 +7,41 @@ body {
 }
 
 
-
 .productos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+.titulos-productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.titulos-productos h1 {
+    font-size: 3rem;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+
+.titulos-productos h2 {
+    background: var(--color-background2);
+    padding: 12px 25px;
+    border-radius: 25px;
+    max-width: fit-content;
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0px;
 }
 
 .carta-jabon {
-    width: 350px;
+    width: 300px;
     border:2px solid var(--color-primary);
     border-radius: 10px;
     overflow: hidden;
@@ -28,97 +52,79 @@ body {
 }
 
 .boton-stock{
-
     display: inline-block;
-
-    padding: 12px 25px;
-
+    padding: 10px 20px;
+    font-size: 1rem;
     background-color: var(--color-primary);
-
     color: white;
-
     text-decoration: none;
-
     border-radius: 25px;
-
     font-weight: bold;
-
     transition: .3s;
 }
 
-
-
-.precio{
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: var(--color-primary);
-    text-align: center;
-    margin: 20px 0;
+.boton-stock {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
 }
 
+.precio {
+    font-size:1.5rem;
+    font-weight:bold;
+    text-align:center;
+    color:#4F6A3C;
+    letter-spacing:1px;
+}
 
 
 /* Efecto para la carta en especifico de hello kitty*/
 
 
-
+/* Escondemos a la kitty para que aparezca al pasar el mouse */
 .hellokittyjabon{
     position: relative;
     overflow: hidden;
 }
-
+/* Imagen de Hello Kitty oculta por encima de la tarjeta.
+   Se posiciona de forma absoluta para que pueda deslizarse
+   hacia abajo al activar el efecto hover. */
 .Kittyespia{
-
     position:absolute;
-
-    width:90px;
-
+    width:75px;
     left:20px;
-
     top:-100px;
-
     transition:.45s ease;
-
     z-index:100;
 }
 
+/* Configuramos el mensajito que aparece al lado de la imagen
+al pasar el mouse */
 .kittymsj {
-
     position:absolute;
-
     top:20px;
-
     left:110px;
-
     background:white;
-
     padding:8px 14px;
-
     border-radius:20px;
-
-    font-size:1rem;
-
+    font-size:.9rem;
     opacity:0;
-
     transition:.3s;
-
     z-index:100;
 }
+
+
 
 .hellokittyjabon:hover .Kittyespia{
-
     top:-10px;
-
     animation:saludar .8s ease;
-
 }
 
 .hellokittyjabon:hover .kittymsj{
-
     opacity:1;
-
 }
 
+/* El movimiento que hace como si tambaleara cuando pasas el mouse */
 @keyframes saludar{
 
     0%{
@@ -151,15 +157,17 @@ body {
 
 }
 
-.carta-jabon h3, 
 .carta-jabon p{
-    text-align: center;
-    margin: 10px 10px;
-    font-size: 1.5em;
+    text-align:center;
+    margin:10px;
+    font-size:1.15rem;
+    line-height:1.5;
 }
 
 .carta-jabon h3 {
-    font-size: 1.8em;
+    text-align:center;
+    margin:10px;
+    font-size:1.5rem;
 }
 .carta-jabon:hover {
     transform:translateY(-8px);
@@ -168,7 +176,7 @@ body {
 
 .imagen-jabon {
     width: 100%;
-    height: 350px;
+    height: 280px;
     object-fit: cover;
     background-color: var(--color-background);
 }

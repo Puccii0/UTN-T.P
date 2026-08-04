@@ -10,8 +10,9 @@
         display: flex; 
         justify-content: space-between; 
         align-items: center; 
-        padding: 10px 20px;
-        border-bottom: 10px solid var(--color-primary);
+
+        padding: 8px 25px;
+        border-bottom: 8px solid var(--color-primary);
 }
 
 .navbar ul {
@@ -25,12 +26,26 @@
     color: var(--color-text);
     text-decoration: underline;
     text-decoration-color: var(--color-primary);    
-    font-size: 1.8rem;    
+    font-size: 1.4rem;    
+    cursor:pointer;
+    transition:.3s;
 
 }
 
+.navbar a:hover {
+    background:var(--color-background2);
+    border-radius: 8px;
+}
+
+.titulo-logo {
+    font-family: "Lobster Two", cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-text);
+}
+
 .navbar img {
-    width: 100px;
+    width: 70px;
     height: auto;
 }
 
@@ -52,10 +67,10 @@ footer {
         justify-content: space-between; 
         align-items: center;
         background-color: var(--color-background);
-        padding: 10px 20px;
+        padding: 15px 30px;
         color: var(--color-text);
         font-family: playfair display, serif;
-        border-top: 10px solid var(--color-primary);
+        border-top: 8px solid var(--color-primary);
 }
 
 footer ul {
@@ -69,20 +84,23 @@ footer a {
     color: var(--color-text);
     text-decoration: underline;
     text-decoration-color: var(--color-primary);    
-    font-size: 1.8rem;
+    font-size: 1.2rem;
+    cursor:pointer;
+    transition:.3s;
 }
 
-h1 {
-        justify-content: center;
-        align-items: center;
+footer a:hover {
+    background:var(--color-background2);
+    border-radius: 8px;
 }
-
 
 p {
     font-family: playfair display, serif;
     color: var(--color-text);
 }
-
+.tit-principal {
+    text-decoration: underline;
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: "Lobster Two", cursive;
     color: var(--color-text);

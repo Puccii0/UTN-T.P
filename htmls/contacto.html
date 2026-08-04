@@ -21,16 +21,16 @@
              <a href="/assets/hand-soap.png" class="logo">
                 <img src="/assets/hand-soap.png" alt="Logo-caricias">
                 </a>
-                <h1> Caricias para tu piel </h1>
-            <ul class="nav-links">
-
+                <p class="titulo-logo"> Caricias para tu piel </p>
+                <ul class="nav-links">
                 <li> <a href="/htmls/index.html">Inicio</a> </li>
                 <li> <a href="/htmls/productos.html">Nuestros Jabones </a></li>
                 <li> <a href="/htmls/contacto.html"> Contacto </a></li>
 
             </ul>
         </nav>
-    </header>
+</header>
+
 
 
 
@@ -39,48 +39,49 @@
 <section class="contacto">
     
     <h1 class="form-titulo"> Contactanos! </h1>
-    <h3>Tenes un mensaje para nosotros o queres conocer mas sobre nuestro productos?</h3>
+    <h3>Tenes un mensaje para nosotros o queres conocer mas sobre nuestros productos?</h3>
     <div class="contenedor-contacto">
     <form action="#" method="POST" id="form-contacto">
 
         <div class="campform">
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required><br><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
         </div>
 
         <div class="campform">
             <label for="telefono"> Telefono: </label>
-            <input type="number" id="telefono" name="telefono" placeholder="Ingresa tu telefono" required>
+            <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu teléfono" required>
         </div>
 
         <div class="campform">
         <label for="asunto">Asunto:</label>
-        <select id="asunto" name="asunto">
+        <select id="asunto" name="asunto" required>
+        <option value=""> Seleccione un asunto </option>
         <option value="consulta">Consulta general</option>
         <option value="stock">Consulta de stock</option>
         <option value="pedido">Realizar un pedido</option>
         </select>
         </div>
 
-        <br><br>
+        
         <div class="campform">
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Ingresa tu email" required><br><br>
+        <input type="email" id="email" name="email" placeholder="Ingresa tu email" required>
         </div>
 
         <div class="campform">
         <label>¿Qué tipo de jabón te interesa?</label>
-        <div>
+        <div class="radio-opcion">
         <input type="radio" id="natural" name="producto" value="natural">
         <label for="natural">Natural</label>
         </div>
 
-        <div>
+        <div class="radio-opcion">
         <input type="radio" id="aromatico" name="producto" value="aromatico">
         <label for="aromatico">Aromático</label>
         </div>
 
-        <div>
+        <div class="radio-opcion">
         <input type="radio" id="regalo" name="producto" value="regalo">
         <label for="regalo">Regalo</label>
         </div>
@@ -88,7 +89,7 @@
 
         <div class="campform">
         <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" required></textarea><br><br>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
         </div>
 
         <div class="botonform">
@@ -102,10 +103,13 @@
 
     </form>
             <div class="info-contacto">
+            <h2> ¿Tenés alguna duda? </h2>
+            <p>Estamos disponibles para responder consultas sobre nuestros jabones, pedidos y stock.</p>
             <p><i class="fa-solid fa-phone"></i> Teléfono: 123-456-7890</p>
             <p><i class="fa-solid fa-envelope"></i> Email: info@cariciasparatupiel.com</p>
             <p><i class="fa-solid fa-map-marker-alt"></i> Dirección: Av. Siempreviva 742, Springfield</p>
             <p><i class="fa-solid fa-clock"></i> Horario: Lunes a Viernes, 9:00 AM - 6:00 PM</p>
+
             </div>
     </div>
     </section>
